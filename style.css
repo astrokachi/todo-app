@@ -80,7 +80,7 @@ body {
 	border-radius: 50%;
 	background: #5835e5;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 }
 
@@ -108,12 +108,18 @@ body {
 	font-size: 16px;
 }
 
+.panel{
+
+  border-bottom: 1px solid #1c1b1f15;
+}
+
 .panel-con {
 	display: flex;
 	align-items: center;
 	padding: 20px;
 	cursor: pointer;
-	gap: 10px;
+	gap: 20px;
+  transition: all 150ms ease;
 }
 
 .star {
@@ -210,6 +216,8 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: space-between;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 
 .check{
@@ -251,9 +259,22 @@ body {
   background: #1c1b1f1e;
   display: flex;
   gap: 20px;
+ 
+}
+
+.pluss{
+  cursor: pointer;
 }
 
 .add{
+  color: #fff;
+  background: unset;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.add::placeholder{
   color: #fff;
 }
 
@@ -273,4 +294,45 @@ body {
 .x-con{
   flex-grow: 1;
   text-align: end;
+}
+
+.note{
+  padding: 10px 0px;
+  border-bottom: 1px solid #1c1b1f15;
+}
+
+.note-header{
+  padding-bottom: 10px;
+}
+
+.note-text{
+  font-weight: bold;
+}
+
+.lists{
+  padding-top: 10px;
+}
+
+.list{
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.listicon{
+  width: 20px;
+  height: 20px;
+}
+
+.panel-con:hover{
+  background: #1c1b1f0e;
+}
+.list:hover{
+  background: #1c1b1f0e;
+}
+
+.tsk:hover{
+  background-color: rgba(255, 255, 255, 0.521);
 }
